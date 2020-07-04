@@ -1,0 +1,1 @@
+https://www.nltk.org/howto/wordnet.html

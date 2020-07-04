@@ -1,0 +1,28 @@
+Solution outline:
+-----------------
+1. Preprocess your text data using coreNLP (getNouns), and store the results in a variable like "nouns"
+- read in osha.txt
+- get text column
+- apply getNouns over text column, keep result in a variable like "nouns"
+
+2. Prepare a list of terms for occupations, and one for body parts, using wordNet
+occ_words: c(hyponyms("employee"), hyponyms("worker"))
+body_words: external body part, body part
+
+3. create corpus from "nouns"
+
+4. create DTM
+	- using nouns corpus
+ 	- in the list of control parameters, dictionary=occ_words
+	- use binary indexing method
+
+Things to submit (Day3) in one zip file:
+=================
+1. word document summarizing your findings for miniproject
+2. py document for what you've done in miniproject
+
+file naming convention:
+yourname.zip
+yourname_mini.doc
+yourname_mini.py
+
